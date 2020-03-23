@@ -60,5 +60,16 @@ git commit -am "[text]"
 git restore "[file_name]"
 // .gitkeep добавление пустого репозитория
 // .gitignore правила игнорирования
+```
 
+## lesson 6
+``` git
+// история коммитов
+git log --oneline
+// история операций
+git reflog
+// возврат к определенному коммиту
+git reset [hash]
+// отменяет действия
+git revert [hash]
 ```
