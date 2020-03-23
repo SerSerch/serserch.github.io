@@ -1,5 +1,6 @@
 # serserch.github.io
 
+## lesson 2
 ``` git
 // начальная настройка гита
 git --version
@@ -10,9 +11,12 @@ git config --global core.editor "[program]"
 git config --list
 ```
 
+## lesson 3
 ``` bush
 // список файлов
 ls
+// список  файлов вместе с скрытыми
+ls -a
 // создать директорию
 mkdir "[name]"
 // переход в директорию
@@ -31,4 +35,13 @@ cat "[name]"
 rm "[name]"
 // полное удаление директории
 rm -R "[name]"
+```
+
+## lesson 4
+``` git
+// первая инициализация репозитория
+git init
+git status
+git remote add origin [link]
+git remote -v
 ```
