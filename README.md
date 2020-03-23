@@ -73,3 +73,13 @@ git reset [hash]
 // отменяет действия
 git revert [hash]
 ```
+
+## lesson 7
+``` git
+// доступные ветки
+git branch
+// создание ветки
+git branch [branch_name] [parent_branch_name]
+// создать и перейти в ветку
+git checkout -b [branch_name]
+```
