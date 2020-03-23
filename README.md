@@ -1,4 +1,4 @@
-# Наставникус
+# serserch.github.io
 
 ``` git
 // начальная настройка гита
@@ -8,4 +8,27 @@ git config --global user.email "[email]"
 git config --global color.io auto
 git config --global core.editor "[program]"
 git config --list
+```
+
+``` bush
+// список файлов
+ls
+// создать директорию
+mkdir "[name]"
+// переход в директорию
+cd /D "[path]"
+// создать файл
+touch "[name]"
+// копировать файл
+cp "[name]" "[name_copy]"
+// переименовать файл
+mv "[name]" "[new_name]"
+// вывод текста в файл
+echo "[text]" > "[name]"
+// чтение файла
+cat "[name]"
+// полное удаление файла
+rm "[name]"
+// полное удаление директории
+rm -R "[name]"
 ```
