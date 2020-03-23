@@ -33,14 +33,19 @@ cat "[file_name]"
 rm "[file_name]"
 // полное удаление директории
 rm -R "[dir_name]"
+// очистить консоль
+clear
 ```
 
 ## lesson 4
 ``` git
 // первая инициализация репозитория
 git init
+// статус репозитория
 git status
-git remote add origin [repo_link]
+// создание связи с удаленным репозиторием
+git remote add [origin] [repo_link]
+// список подключенных связей
 git remote -v
 ```
 
@@ -82,4 +87,18 @@ git branch
 git branch [branch_name] [parent_branch_name]
 // создать и перейти в ветку
 git checkout -b [branch_name]
+```
+
+## lesson 8
+``` git
+// создание ssh ключа
+ssh-keygen
+// клонирование репозитория
+git clone [repo_link] [dir_name]
+// загрузка изменений на удаленный репозиторий
+git push -u [origin] [branch_name]
+// получить изменения с удаленного репозитория
+git push
+// обновить синхронизацию
+git fetch
 ```
