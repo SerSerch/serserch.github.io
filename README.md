@@ -13,28 +13,26 @@ git config --list
 
 ## lesson 3
 ``` bush
-// список файлов
-ls
 // список  файлов вместе с скрытыми
 ls -a
 // создать директорию
-mkdir "[name]"
+mkdir "[dir_name]"
 // переход в директорию
-cd /D "[path]"
+cd /D "[dir_path]"
 // создать файл
-touch "[name]"
+touch "[file_name]"
 // копировать файл
-cp "[name]" "[name_copy]"
+cp "[file_name]" "[file_name_copy]"
 // переименовать файл
-mv "[name]" "[new_name]"
+mv "[file_name]" "[new_file_name]"
 // вывод текста в файл
-echo "[text]" > "[name]"
+echo "[text]" > "[file_name]"
 // чтение файла
-cat "[name]"
+cat "[file_name]"
 // полное удаление файла
-rm "[name]"
+rm "[file_name]"
 // полное удаление директории
-rm -R "[name]"
+rm -R "[dir_name]"
 ```
 
 ## lesson 4
@@ -42,6 +40,18 @@ rm -R "[name]"
 // первая инициализация репозитория
 git init
 git status
-git remote add origin [link]
+git remote add origin [repo_link]
 git remote -v
+```
+
+## lesson 5
+``` git
+// добавление всех файлов в индекс
+git add .
+// добавление файла в индекс
+git add "[file_name]"
+// удаление файла из индекса
+git rm --cached "[file_name]"
+// создание коммита
+git commit -m "[text]"
 ```
