@@ -54,4 +54,11 @@ git add "[file_name]"
 git rm --cached "[file_name]"
 // создание коммита
 git commit -m "[text]"
+// добавление в индекс и коммит
+git commit -am "[text]"
+// отменяет все изменения в файле
+git restore "[file_name]"
+// .gitkeep добавление пустого репозитория
+// .gitignore правила игнорирования
+
 ```
