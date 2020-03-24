@@ -102,3 +102,17 @@ git push
 // обновить синхронизацию
 git fetch
 ```
+
+## lesson 9
+``` git
+// слияние веток
+git merge [branch_name]
+// удаление веток
+git branch -d [branch_name]
+// удаление веток в удаленном репозитории
+git push --delete [origin] [branch_name]
+// смена начала ветки
+git rebase [branch_name]
+// принудительная перезапись удаленной ветки
+git push --force
+```
