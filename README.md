@@ -116,3 +116,17 @@ git rebase [branch_name]
 // принудительная перезапись удаленной ветки
 git push --force
 ```
+
+## lesson 10
+``` git
+// добавление тега
+git tag [tag_name]
+// список всех тегов
+git tag --list
+// загрузка тегов в удаленный репозиторий
+git push --tags
+// удаление тега
+git tag -d [tag_name]
+// удаление тегов в удаленном репозитории
+git push --delete [origin] [tag_name]
+```
