@@ -15,15 +15,15 @@ git config --list
 ``` bush
 // список  файлов вместе с скрытыми
 ls -a
-// создать директорию
+// создание директории
 mkdir "[dir_name]"
 // переход в директорию
 cd /D "[dir_path]"
-// создать файл
+// создание файла
 touch "[file_name]"
-// копировать файл
+// копирование файла
 cp "[file_name]" "[file_name_copy]"
-// переименовать файл
+// переименование файла
 mv "[file_name]" "[new_file_name]"
 // вывод текста в файл
 echo "[text]" > "[file_name]"
@@ -33,7 +33,7 @@ cat "[file_name]"
 rm "[file_name]"
 // полное удаление директории
 rm -R "[dir_name]"
-// очистить консоль
+// очистка консоли
 clear
 ```
 
@@ -61,7 +61,7 @@ git rm --cached "[file_name]"
 git commit -m "[text]"
 // добавление в индекс и коммит
 git commit -am "[text]"
-// отменяет все изменения в файле
+// отмена всех изменений в файле
 git restore "[file_name]"
 // .gitkeep добавление пустого репозитория
 // .gitignore правила игнорирования
@@ -70,12 +70,12 @@ git restore "[file_name]"
 ## lesson 6
 ``` git
 // история коммитов
-git log --oneline
+git log --oneline --all
 // история операций
 git reflog
 // возврат к определенному коммиту
 git reset [hash]
-// отменяет действия
+// отмена действия
 git revert [hash]
 ```
 
@@ -85,7 +85,7 @@ git revert [hash]
 git branch
 // создание ветки
 git branch [branch_name] [parent_branch_name]
-// создать и перейти в ветку
+// создание и переход в ветку
 git checkout -b [branch_name]
 ```
 
@@ -97,9 +97,9 @@ ssh-keygen
 git clone [repo_link] [dir_name]
 // загрузка изменений на удаленный репозиторий
 git push -u [origin] [branch_name]
-// получить изменения с удаленного репозитория
+// получение изменений с удаленного репозитория
 git push
-// обновить синхронизацию
+// обновление синхронизации
 git fetch
 ```
 
@@ -129,4 +129,28 @@ git push --tags
 git tag -d [tag_name]
 // удаление тегов в удаленном репозитории
 git push --delete [origin] [tag_name]
+```
+
+## lesson 12
+``` git
+// создание временного хранилища
+git stash
+// список временных хранилищ
+git stash list
+// добавление новых файлов в временное хранилище
+git stash push [file_name]
+// загрузка изменений из временного хранилища
+git stash pop [stash_name]
+// слияние веток с объединением коммитов
+git merge [bransh_name] --squash
+// отмена операции
+git reset --hard
+// объединение коммитов
+git rebase -i HEAD~[number]
+// перенос коммита
+git cherry-pick [hash]
+// перезапись коммита
+git commit --amend
+// отмена слияния
+git merge --abort
 ```
