@@ -86,7 +86,7 @@ git branch
 // создание ветки
 git branch [branch_name] [parent_branch_name]
 // создание и переход в ветку
-git checkout -b [branch_name]
+git checkout -b [branch_name] [origin/branc_hname]
 ```
 
 ## lesson 8
